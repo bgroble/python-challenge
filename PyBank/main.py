@@ -114,6 +114,7 @@ output_path = os.path.join(os.path.dirname(__file__), "Analysis", "pybank_text.t
 
 with open(output_path, "w") as textfile:   
     textfile.write("Financial Analysis\n")
+    textfile.write("-----------------------------\n")
     textfile.write(f"Total Months: {month_num}\n")
     textfile.write(f"Total: ${profit_tot:,}\n")
     textfile.write(f"Average Change ${round(average_change,2):,}\n")
